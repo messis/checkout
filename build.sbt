@@ -1,3 +1,7 @@
+import com.typesafe.startscript.StartScriptPlugin
+
+seq(StartScriptPlugin.startScriptForClassesSettings: _*)
+
 name:= "checkout"
 
 organization:= "com.mevassvik"
