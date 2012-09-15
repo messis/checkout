@@ -7,6 +7,9 @@
 *.log
 *.releaseBackup
 target
+project/boot
+project/target
+project/plugins/target
 logs
 .settings
 .project
