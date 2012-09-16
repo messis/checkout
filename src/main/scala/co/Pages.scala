@@ -24,7 +24,7 @@ object Pages {
   def about = template(
     <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>about!</h1>
+        <h1>about</h1>
         <p>
           <it>checkout</it>
           is a pet project to check out
@@ -48,6 +48,20 @@ object Pages {
                 &raquo;
               </a>
             </p-->
+      </div>
+  )
+
+  def contact = template(
+    <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>contact</h1>
+        <p></p>
+        <p>
+          <a href="twitter.com/messis" target="_blank">twitter.com/messis</a>
+        </p>
+        <p>
+          <a href="github.com/messis" target="_blank">github.com/messis</a>
+        </p>
       </div>
   )
 
@@ -97,7 +111,7 @@ object Pages {
                     <a href="/about">About</a>
                   </li>
                   <li>
-                    <a href="#contact">Contact</a>
+                    <a href="/contact">Contact</a>
                   </li>
                   <!--
                   <li class="dropdown">
