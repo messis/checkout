@@ -31,10 +31,18 @@ object Pages {
           <a href="www,scala.org" target="_blank">Scala</a>
           ,
           <a href="unfiltered.databinder.net" target="_blank">Unfiltered</a>
+          ,
+          <a href="twitter.github.com/bootstrap" target="_blank">Bootstrap</a>
+          ,
+          <a href="http://ethanmarcotte.com" target="_blank">Responsive Web design</a>
+          ,
           and
           <a href="www.mongodb.org" target="_blank">MongoDB</a>
           on
           <a href="www.heroku.com/" target="_blank">Heroku</a>
+        </p>
+        <p>
+          This work is indeed in progress. Currently the MongoDB-stuff is not present hence no dynamics. And the Bootstrap default template is not that mobile friendly. But time will show.
         </p>
         <!--p>
               <a class="btn btn-primary btn-large">Learn more
