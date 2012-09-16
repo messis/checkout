@@ -1,8 +1,27 @@
 package co
 
+import xml.NodeSeq
+
 object Pages {
 
-  def index = {
+  def index = template(
+    <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>checkout!</h1>
+        <p>
+          <it>checkout</it>
+          is a simple tool to remember stuff you need to (you guesed it)
+          <b>check out!</b>
+        </p>
+        <!--p>
+              <a class="btn btn-primary btn-large">Learn more
+                &raquo;
+              </a>
+            </p-->
+      </div>
+  )
+
+  def template(content: NodeSeq) = {
     <html lang="en">
       <head>
         <meta charset="utf-8"/>
@@ -12,11 +31,11 @@ object Pages {
         <meta name="author" content=" "/>
 
         <!-- Le styles -->
-        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet"/>
+        <link href="/css/bootstrap.css" rel="stylesheet"/>
         <style type="text/css">body
           {"""padding - top: 60 px;padding - bottom: 40 px;"""}
         </style>
-        <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet"/>
+        <link href="../css/bootstrap-responsive.css" rel="stylesheet"/>
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -44,15 +63,13 @@ object Pages {
               <a class="brand" href="#">checkout</a>
               <div class="nav-collapse collapse">
                 <ul class="nav">
-                  <li class="active">
-                    <a href="#">Home</a>
-                  </li>
                   <li>
                     <a href="#about">About</a>
                   </li>
                   <li>
                     <a href="#contact">Contact</a>
                   </li>
+                  <!--
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
                       <b class="caret"></b>
@@ -77,6 +94,7 @@ object Pages {
                       </li>
                     </ul>
                   </li>
+                  -->
                 </ul>
                 <form class="navbar-form pull-right">
                   <input class="span2" type="text" placeholder="Email"/>
@@ -88,26 +106,11 @@ object Pages {
           </div>
         </div>
 
-        <br/>
-        <br/>
+
         <div class="container">
 
-          <!-- Main hero unit for a primary marketing message or call to action -->
-          <div class="hero-unit">
-            <h1>checkout!</h1>
-            <p>
-              <it>checkout</it>
-              is a simple tool to remember stuff you need to - you guesed it -
-              <b>check out!</b>
-            </p>
-            <!--p>
-              <a class="btn btn-primary btn-large">Learn more
-                &raquo;
-              </a>
-            </p-->
-          </div>
-
-          <!-- Example row of columns -->
+          {content}<!-- Example row of columns -->
+          <!--
           <div class="row">
             <div class="span4">
               <h2>Heading</h2>
@@ -137,7 +140,7 @@ object Pages {
               </p>
             </div>
           </div>
-
+          -->
           <hr/>
 
           <footer>
