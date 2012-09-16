@@ -40,6 +40,7 @@ object Pages {
           <a href="www.mongodb.org" target="_blank">MongoDB</a>
           on
           <a href="www.heroku.com/" target="_blank">Heroku</a>
+          .
         </p>
         <p>
           This work is indeed in progress. Currently the MongoDB-stuff is not present hence no dynamics. And the Bootstrap default template is not that mobile friendly. But time will show.
