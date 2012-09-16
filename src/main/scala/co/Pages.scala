@@ -21,6 +21,29 @@ object Pages {
       </div>
   )
 
+  def about = template(
+    <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="hero-unit">
+        <h1>about!</h1>
+        <p>
+          <it>checkout</it>
+          is a pet project to check out
+          <a href="www,scala.org" target="_blank">Scala</a>
+          ,
+          <a href="unfiltered.databinder.net" target="_blank">Unfiltered</a>
+          and
+          <a href="www.mongodb.org" target="_blank">MongoDB</a>
+          on
+          <a href="www.heroku.com/" target="_blank">Heroku</a>
+        </p>
+        <!--p>
+              <a class="btn btn-primary btn-large">Learn more
+                &raquo;
+              </a>
+            </p-->
+      </div>
+  )
+
   def template(content: NodeSeq) = {
     <html lang="en">
       <head>
@@ -64,7 +87,7 @@ object Pages {
               <div class="nav-collapse collapse">
                 <ul class="nav">
                   <li>
-                    <a href="#about">About</a>
+                    <a href="/about">About</a>
                   </li>
                   <li>
                     <a href="#contact">Contact</a>
