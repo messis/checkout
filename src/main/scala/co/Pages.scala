@@ -104,7 +104,7 @@ object Pages {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </a>
-              <a class="brand" href="#">checkout</a>
+              <a class="brand" href="/">checkout</a>
               <div class="nav-collapse collapse">
                 <ul class="nav">
                   <li>
