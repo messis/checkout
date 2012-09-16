@@ -40,6 +40,9 @@ object Pages {
         <p>
           This work is indeed in progress. Currently the MongoDB-stuff is not present hence no dynamics. And the Bootstrap default template is not that mobile friendly. But time will show.
         </p>
+        <p>
+          Code on <a href="github.com/messis/checkout" target="_blank">github</a>.
+        </p>
         <!--p>
               <a class="btn btn-primary btn-large">Learn more
                 &raquo;
